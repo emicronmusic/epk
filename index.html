@@ -1,11 +1,6 @@
-<!doctype html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Emicron, DJ y productor de Psy Trance y Progressive Psy de la Patagonia argentina. Presskit y booking.">
-<meta name="theme-color" content="#0D1411">
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Emicron</title>
+<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap">
 <style>
 /* Layout: noche patagónica. Cordilleras en líneas sobre un lago, luna llena como único foco; resto sobrio, en columnas con filas finas. */
@@ -40,8 +35,6 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-img { max-width: 100%; }
-[hidden] { display: none !important; }
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 17px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
 body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); background: var(--bg); z-index: 30; }
@@ -113,9 +106,11 @@ p { margin: 0; }
 .sub { margin: 44px 0 14px; }
 .embed { background: var(--surface); border: 1px solid var(--line); border-radius: 2px; overflow: hidden; }
 .embed.video { aspect-ratio: 16 / 9; }
-.embed.sc, .embed.sp { height: 352px; }
+.embed.sc { height: 300px; }
+.embed.sp { height: 152px; background: none; border: 0; border-radius: 12px; }
+.embed.sp iframe { border-radius: 12px; color-scheme: light; }
 .embed iframe { display: block; width: 100%; height: 100%; border: 0; }
-.players { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.players { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0; }
 .players .sub { margin-top: 36px; }
 .ph { width: 100%; height: 100%; display: grid; place-content: center; justify-items: center; gap: 10px; text-align: center; color: var(--muted); padding: 16px; font-size: 14px; }
 .ph .play { width: 56px; height: 56px; border-radius: 50%; border: 1.5px solid var(--lake); position: relative; }
@@ -170,10 +165,10 @@ footer .in { display: flex; justify-content: space-between; gap: 16px; flex-wrap
   .facts li, .contact dl div { grid-template-columns: 92px minmax(0, 1fr); }
   .mark { font-size: 20px; letter-spacing: .18em; }
   .top .in { gap: 10px; }
-  .cta .btn, .links .btn { flex: 1 1 100%; justify-content: center; }
+  .cta .btn { flex: 1 1 100%; justify-content: center; }
+  .links .btn { flex: 1 1 calc(50% - 6px); justify-content: center; }
   .rel a { position: relative; font-size: 24px; line-height: 1; padding: 14px 4px; }
   .rel a span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-  .embed.sc, .embed.sp { height: 320px; }
   .sub { margin-top: 36px; }
 }
 @media (pointer: coarse) {
@@ -183,8 +178,7 @@ footer .in { display: flex; justify-content: space-between; gap: 16px; flex-wrap
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 </style>
-</head>
-<body>
+
 <header class="top">
   <div class="in">
     <a class="mark" href="#top" data-go="top" aria-label="Emicron"><img src="img/logo.png" alt="Emicron" width="144" height="24"></a>
@@ -214,7 +208,7 @@ footer .in { display: flex; justify-content: space-between; gap: 16px; flex-wrap
       <div class="meta label"><span data-i18n="hero_place"></span></div>
       <div class="cta">
         <a class="btn solid" href="#contacto" data-go="contacto" data-i18n="cta_book"></a>
-        <a class="btn" href="https://on.soundcloud.com/4drR81meTopEytnu8k" target="_blank" rel="noopener" data-i18n="cta_listen"></a>
+        <a class="btn" href="https://soundcloud.com/emicronofficial/emicron-spiritual-session-1" target="_blank" rel="noopener" data-i18n="cta_listen"></a>
       </div>
     </div>
   </div>
@@ -224,11 +218,6 @@ footer .in { display: flex; justify-content: space-between; gap: 16px; flex-wrap
       <div>
         <div class="label">Presskit</div>
         <h2 data-i18n="bio_h"></h2>
-        <ul class="facts">
-          <li><span class="y">2002–2012</span><span data-i18n="f1"></span></li>
-          <li><span class="y">2007</span><span data-i18n="f2"></span></li>
-          <li><span class="y">2008</span><span data-i18n="f3"></span></li>
-        </ul>
       </div>
       <div class="text">
         <p data-i18n="bio_p1"></p>
@@ -300,19 +289,19 @@ footer .in { display: flex; justify-content: space-between; gap: 16px; flex-wrap
           <div class="label" data-i18n="hl_club"></div>
           <ul>
             <li>Groove, Buenos Aires</li>
+            <li>Psychedelic Temple RPC</li>
           </ul>
         </div>
         <div>
           <div class="label" data-i18n="hl_labels"></div>
           <ul>
-            <li>Geomagnetic Records</li>
-            <li>Rizoma Records</li>
-            <li>Ovnimoon Records</li>
-            <li>Synk87</li>
             <li>Iono Music</li>
+            <li>Synk 87</li>
             <li>X7M</li>
             <li>Vagalume Records</li>
             <li>360 Music</li>
+            <li>Geomagnetic Records</li>
+            <li>Ovnimoon Records</li>
             <li>Psy Mania</li>
           </ul>
         </div>
@@ -325,15 +314,15 @@ footer .in { display: flex; justify-content: space-between; gap: 16px; flex-wrap
       <div class="label" data-i18n="music_label"></div>
       <h2 data-i18n="music_h"></h2>
       <div class="label sub" data-i18n="lbl_video"></div>
-      <div class="embed video"><iframe src="https://www.youtube.com/embed/F8uHo-B948g" title="Emicron live set" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+      <div class="embed video"><div class="ph" data-embed="youtube"><span class="play" aria-hidden="true"></span><span class="ph-t">YouTube</span><span>Vista previa: en tu sitio publicado, acá se reproduce el video del set.</span></div></div>
       <div class="players">
         <div>
           <div class="label sub">SoundCloud</div>
-          <div class="embed sc"><iframe src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fon.soundcloud.com%2F4drR81meTopEytnu8k&amp;color=%236FB5AB&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=false&amp;visual=true" title="Emicron on SoundCloud" allow="autoplay" loading="lazy"></iframe></div>
+          <div class="embed sc"><div class="ph" data-embed="soundcloud"><span class="play" aria-hidden="true"></span><span class="ph-t">SoundCloud</span><span>Vista previa: acá se reproduce tu set.</span></div></div>
         </div>
         <div>
           <div class="label sub">Spotify</div>
-          <div class="embed sp"><iframe src="https://open.spotify.com/embed/artist/0P6OER7zhANEcTZxWQB2cN?utm_source=generator&amp;theme=0" title="Emicron on Spotify" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+          <div class="embed sp"><div class="ph" data-embed="spotify"><span class="play" aria-hidden="true"></span><span class="ph-t">Spotify</span><span>Vista previa: acá suenan tus temas más escuchados.</span></div></div>
         </div>
       </div>
       <div class="label sub" data-i18n="rel_h"></div>
@@ -348,10 +337,10 @@ footer .in { display: flex; justify-content: space-between; gap: 16px; flex-wrap
         <div class="rel"><img class="cv" src="img/covers/amazonas.jpg" alt="Amazonas" loading="lazy" decoding="async" width="88" height="88"><div><div class="tt">Amazonas</div><div class="ar">Emicron</div><div class="yr">2020</div></div><a href="https://open.spotify.com/track/5xyYzaMfmdT2HEyU74Y2eK" target="_blank" rel="noopener"><span data-i18n="listen"></span> ↗</a></div>
       </div>
       <div class="links">
-        <a class="btn solid" href="https://open.spotify.com/artist/0P6OER7zhANEcTZxWQB2cN" target="_blank" rel="noopener" data-i18n="l_spotify"></a>
-        <a class="btn" href="https://on.soundcloud.com/4drR81meTopEytnu8k" target="_blank" rel="noopener" data-i18n="l_sc"></a>
-        <a class="btn" href="https://www.youtube.com/watch?v=F8uHo-B948g" target="_blank" rel="noopener" data-i18n="l_ytset"></a>
-        <a class="btn" href="https://www.youtube.com/@emicronofficial" target="_blank" rel="noopener" data-i18n="l_ytch"></a>
+        <a class="btn solid" href="https://open.spotify.com/artist/0P6OER7zhANEcTZxWQB2cN" target="_blank" rel="noopener">Spotify</a>
+        <a class="btn" href="https://soundcloud.com/emicronofficial" target="_blank" rel="noopener">SoundCloud</a>
+        <a class="btn" href="https://www.youtube.com/@emicronofficial" target="_blank" rel="noopener">YouTube</a>
+        <a class="btn" href="https://www.instagram.com/emicron.music" target="_blank" rel="noopener">Instagram</a>
       </div>
     </div>
   </section>
@@ -553,5 +542,5 @@ footer .in { display: flex; justify-content: space-between; gap: 16px; flex-wrap
   setLang(pick(), false);
 })();
 </script>
-</body>
-</html>
+
+</body></html>
