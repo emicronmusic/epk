@@ -1,6 +1,11 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Emicron, DJ y productor de Psy Trance y Progressive Psy de la Patagonia argentina. Presskit y booking.">
+<meta name="theme-color" content="#0D1411">
 <title>Emicron</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap">
 <style>
 /* Layout: noche patagónica. Cordilleras en líneas sobre un lago, luna llena como único foco; resto sobrio, en columnas con filas finas. */
@@ -35,6 +40,8 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 17px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
 body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); background: var(--bg); z-index: 30; }
@@ -178,7 +185,8 @@ footer .in { display: flex; justify-content: space-between; gap: 16px; flex-wrap
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 </style>
-
+</head>
+<body>
 <header class="top">
   <div class="in">
     <a class="mark" href="#top" data-go="top" aria-label="Emicron"><img src="img/logo.png" alt="Emicron" width="144" height="24"></a>
@@ -288,8 +296,7 @@ footer .in { display: flex; justify-content: space-between; gap: 16px; flex-wrap
         <div>
           <div class="label" data-i18n="hl_club"></div>
           <ul>
-            <li>Groove, Buenos Aires</li>
-            <li>Psychedelic Temple RPC</li>
+            <li>Groove, Psychedelic Temple - RPC, BsAs</li>
           </ul>
         </div>
         <div>
@@ -314,15 +321,15 @@ footer .in { display: flex; justify-content: space-between; gap: 16px; flex-wrap
       <div class="label" data-i18n="music_label"></div>
       <h2 data-i18n="music_h"></h2>
       <div class="label sub" data-i18n="lbl_video"></div>
-      <div class="embed video"><div class="ph" data-embed="youtube"><span class="play" aria-hidden="true"></span><span class="ph-t">YouTube</span><span>Vista previa: en tu sitio publicado, acá se reproduce el video del set.</span></div></div>
+      <div class="embed video"><iframe src="https://www.youtube.com/embed/F8uHo-B948g" title="Emicron live set" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
       <div class="players">
         <div>
           <div class="label sub">SoundCloud</div>
-          <div class="embed sc"><div class="ph" data-embed="soundcloud"><span class="play" aria-hidden="true"></span><span class="ph-t">SoundCloud</span><span>Vista previa: acá se reproduce tu set.</span></div></div>
+          <div class="embed sc"><iframe src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Femicronofficial%2Femicron-spiritual-session-1&amp;color=%236FB5AB&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=false&amp;visual=true" title="Emicron Spiritual Session 1 on SoundCloud" height="300" allow="autoplay" loading="lazy"></iframe></div>
         </div>
         <div>
           <div class="label sub">Spotify</div>
-          <div class="embed sp"><div class="ph" data-embed="spotify"><span class="play" aria-hidden="true"></span><span class="ph-t">Spotify</span><span>Vista previa: acá suenan tus temas más escuchados.</span></div></div>
+          <div class="embed sp"><iframe src="https://open.spotify.com/embed/artist/0P6OER7zhANEcTZxWQB2cN?utm_source=generator&amp;theme=0" title="Emicron on Spotify" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
         </div>
       </div>
       <div class="label sub" data-i18n="rel_h"></div>
@@ -542,5 +549,5 @@ footer .in { display: flex; justify-content: space-between; gap: 16px; flex-wrap
   setLang(pick(), false);
 })();
 </script>
-
-</body></html>
+</body>
+</html>
