@@ -95,6 +95,12 @@ p { margin: 0; }
 .gallery { display: grid; gap: 12px; margin-top: 44px; }
 .g-row { display: flex; gap: 12px; align-items: flex-start; }
 .g-row img { flex: var(--r) 1 0%; min-width: 0; height: auto; display: block; border-radius: 2px; background: var(--surface); }
+.drops { display: grid; grid-template-columns: minmax(0, .431fr) minmax(0, .569fr); gap: 12px; margin-top: 44px; }
+.drops .h { display: grid; gap: 12px; align-content: start; }
+.drops .v { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.drops .clip { position: relative; background: var(--surface); border-radius: 2px; overflow: hidden; }
+.drops .h .clip { aspect-ratio: 16 / 9; }
+.drops .clip iframe, .drops .clip .ph { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: grid; }
 .three { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(28px, 4vw, 56px); margin-top: 48px; }
 .three article { border-top: 1px solid var(--lake); padding-top: 20px; display: grid; gap: 14px; align-content: start; }
 .three p { color: var(--muted); font-size: 16px; }
@@ -161,6 +167,9 @@ footer .in { display: flex; justify-content: space-between; gap: 16px; flex-wrap
   .g-row img[src*="g-hex"] { order: 5; }
   .g-row img[src*="g-tent"] { order: 6; }
   .nav { display: none; }
+  .drops { grid-template-columns: minmax(0, 1fr); }
+  .drops .v { grid-template-columns: minmax(0, 1fr); }
+  .drops .v .clip { height: auto; aspect-ratio: 9 / 16; width: 100%; max-width: 420px; margin-inline: auto; }
   .bio, .contact, .players { grid-template-columns: minmax(0, 1fr); }
   .three, .cols { grid-template-columns: minmax(0, 1fr); }
   .sound .row { grid-template-columns: minmax(0, 1fr); gap: 8px; }
@@ -194,6 +203,7 @@ footer .in { display: flex; justify-content: space-between; gap: 16px; flex-wrap
       <a href="#bio" data-go="bio" data-i18n="nav_bio"></a>
       <a href="#evento" data-go="evento" data-i18n="nav_event"></a>
       <a href="#sonido" data-go="sonido" data-i18n="nav_sound"></a>
+      <a href="#droping" data-go="droping">Droping</a>
       <a href="#galeria" data-go="galeria" data-i18n="nav_gallery"></a>
       <a href="#musica" data-go="musica" data-i18n="nav_music"></a>
       <a href="#contacto" data-go="contacto" data-i18n="nav_contact"></a>
@@ -255,6 +265,23 @@ footer .in { display: flex; justify-content: space-between; gap: 16px; flex-wrap
         <div class="row"><h3 data-i18n="s2_t"></h3><p data-i18n="s2_p"></p></div>
         <div class="row"><h3 data-i18n="s3_t"></h3><p data-i18n="s3_p"></p></div>
         <div class="row"><h3 data-i18n="s4_t"></h3><p data-i18n="s4_p"></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="droping">
+    <div class="in">
+      <div class="label" data-i18n="gal_label"></div>
+      <h2>DROPING</h2>
+      <div class="drops">
+        <div class="h">
+          <div class="clip"><iframe src="https://www.youtube.com/embed/GUO0udteWmM?rel=0&amp;playsinline=1" title="Emicron DROPING 1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+          <div class="clip"><iframe src="https://www.youtube.com/embed/o01F8B9pHMA?rel=0&amp;playsinline=1" title="Emicron DROPING 2" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+        </div>
+        <div class="v">
+          <div class="clip"><iframe src="https://www.youtube.com/embed/Nmad-ngEL-M?rel=0&amp;playsinline=1" title="Emicron DROPING 3" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+          <div class="clip"><iframe src="https://www.youtube.com/embed/p6Jn46ldMeU?rel=0&amp;playsinline=1" title="Emicron DROPING 4" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+        </div>
       </div>
     </div>
   </section>
